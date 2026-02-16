@@ -1,0 +1,9 @@
+venv
+.venv
+
+.env
+uv.lock
+*.pyc
+*.txt
+
+*.md

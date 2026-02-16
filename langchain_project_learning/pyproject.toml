@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-project-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.129.0",
+    "langchain>=1.2.10",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.1.9",
+    "langsmith>=0.7.3",
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+    "tavily-python>=0.7.21",
+    "uvicorn>=0.40.0",
+]
+
+[tool.setuptools]
+packages = ["langchain_project_learning", "langchain_project_learning.nodes"]
+
+[tool.setuptools.package-dir]
+"langchain_project_learning" = "."
+"langchain_project_learning.nodes" = "nodes"
