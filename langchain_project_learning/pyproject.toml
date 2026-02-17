@@ -10,6 +10,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.129.0",
+    "ipdb>=0.13.13",
     "langchain>=1.2.10",
     "langchain-community>=0.4.1",
     "langchain-groq>=1.1.2",

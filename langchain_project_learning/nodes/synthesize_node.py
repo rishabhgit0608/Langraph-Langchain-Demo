@@ -21,7 +21,7 @@ def synthesize_data(state: ContentState):
     synthesize_prompt = ChatPromptTemplate.from_template("""
         You are a helpful data cleaner, your main task is to remove unwanted characters and fields coming from the LLM Model
         and return the clean data in the form of Regular String bullet point wise for the provided array which means if array is of size 4, then there should be 4 bullet points for the clean data.
-        This is the input I only expect a string output
+        This is the input I only expect a string output from THIS OUTPUT ONLY.
         {input}
     """)
 

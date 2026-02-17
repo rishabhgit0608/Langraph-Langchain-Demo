@@ -14,7 +14,7 @@ def search_node(state: ContentState):
     """
     tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
     topic = state["topic"]
-    response = tavily_client.search(query=topic, max_results=2, search_depth="fast")
+    response = tavily_client.search(language="English",query=topic+"Language: English", max_results=2, search_depth="fast")
     search_results = [SearchResult(url=result["url"], title=result["title"], content=result["content"]) for result in response["results"]]
     state["search_result"] = search_results
     return state
