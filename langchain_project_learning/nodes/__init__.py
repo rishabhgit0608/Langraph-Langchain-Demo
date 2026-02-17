@@ -1,1 +1,2 @@
 from langchain_project_learning.nodes.search_nodes import search_node
+from langchain_project_learning.nodes.synthesize_nodes import synthesize_data
